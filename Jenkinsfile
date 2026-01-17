@@ -4,7 +4,7 @@ pipeline {
     tools {
         // 💡 PASTIKAN: Nama 'Maven' dan 'JDK17' sesuai dengan yang ada di 
         // Manage Jenkins -> Tools -> Global Tool Configuration
-        maven 'Maven'
+        maven 'MAVEN'
         jdk 'JDK21'
     }
     
