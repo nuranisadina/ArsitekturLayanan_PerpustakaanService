@@ -13,6 +13,7 @@
             <includeMdcKeyName>httpMethod</includeMdcKeyName>
             <includeMdcKeyName>traceId</includeMdcKeyName>
             <includeMdcKeyName>spanId</includeMdcKeyName>
+            <includeMdcKeyName>status</includeMdcKeyName>
             <customFields>{"service":"${serviceName}"}</customFields>
             <timestampPattern>yyyy-MM-dd'T'HH:mm:ss.SSSZ</timestampPattern>
         </encoder>
@@ -37,6 +38,7 @@
             <includeMdcKeyName>httpMethod</includeMdcKeyName>
             <includeMdcKeyName>traceId</includeMdcKeyName>
             <includeMdcKeyName>spanId</includeMdcKeyName>
+            <includeMdcKeyName>status</includeMdcKeyName>
             <customFields>{"service":"${serviceName}"}</customFields>
             <timestampPattern>yyyy-MM-dd'T'HH:mm:ss.SSSZ</timestampPattern>
         </encoder>

@@ -51,6 +51,8 @@ public class LoggingFilter extends OncePerRequestFilter {
         try {
             filterChain.doFilter(request, response);
         } finally {
+            // Add response status to MDC before clearing (if needed for the final log)
+            MDC.put("status", String.valueOf(response.getStatus()));
             MDC.clear();
         }
     }
