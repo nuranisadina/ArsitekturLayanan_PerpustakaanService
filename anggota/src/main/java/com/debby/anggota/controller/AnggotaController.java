@@ -54,7 +54,7 @@ public class AnggotaController {
     public AnggotaModel createAnggota(@RequestBody AnggotaModel anggota) {
         log.info("Request received", kv("action", "CREATE"), kv("nama", anggota.getNama()));
         AnggotaModel result = anggotaService.createAnggota(anggota);
-        log.info("Request completed", kv("action", "CREATE"), kv("status", "MANTAP"), kv("id", result.getId()));
+        log.info("Request completed", kv("action", "CREATE"), kv("status", "OKE"), kv("id", result.getId()));
         return result;
     }
 
