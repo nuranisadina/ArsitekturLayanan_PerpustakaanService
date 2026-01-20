@@ -51,7 +51,7 @@ public class AnggotaController {
     }
 
     @PostMapping
-    public AnggotaModel creteAnggota(@RequestBody AnggotaModel anggota) {
+    public AnggotaModel createAnggota(@RequestBody AnggotaModel anggota) {
         log.info("Request received", kv("action", "CREATE"), kv("nama", anggota.getNama()));
         AnggotaModel result = anggotaService.createAnggota(anggota);
         log.info("Request completed", kv("action", "CREATE"), kv("status", "BERHASIL"), kv("id", result.getId()));
@@ -62,7 +62,7 @@ public class AnggotaController {
     public ResponseEntity<Void> deleteAnggota(@PathVariable Long id) {
         log.info("Request received", kv("action", "DELETE"), kv("id", id));
         anggotaService.deleteAnggota(id);
-        log.info("Request completed", kv("action", "DELETE"), kv("status", "SUCCES"), kv("id", id));
+        log.info("Request completed", kv("action", "DELETE"), kv("status", "SUCCESS"), kv("id", id));
         return ResponseEntity.noContent().build();
     }
 

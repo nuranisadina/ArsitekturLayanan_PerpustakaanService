@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Building Anggota Service...'
                 dir('anggota') {
-                    sh 'mvn clean package -DskipTests'
+                    bat 'mvn clean package -DskipTests'
                 }
             }
         }
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 echo 'Testing Anggota Service...'
                 dir('anggota') {
-                    sh 'mvn test'
+                    bat 'mvn test'
                 }
             }
         }
@@ -40,7 +40,7 @@ pipeline {
             steps {
                 echo 'Building Buku Service...'
                 dir('buku') {
-                    sh 'mvn clean package -DskipTests'
+                    bat 'mvn clean package -DskipTests'
                 }
             }
         }
@@ -49,7 +49,7 @@ pipeline {
             steps {
                 echo 'Testing Buku Service...'
                 dir('buku') {
-                    sh 'mvn test'
+                    bat 'mvn test'
                 }
             }
         }
@@ -58,7 +58,7 @@ pipeline {
             steps {
                 echo 'Building Peminjaman Service...'
                 dir('peminjaman') {
-                    sh 'mvn clean package -DskipTests'
+                    bat 'mvn clean package -DskipTests'
                 }
             }
         }
@@ -67,7 +67,7 @@ pipeline {
             steps {
                 echo 'Testing Peminjaman Service...'
                 dir('peminjaman') {
-                    sh 'mvn test'
+                    bat 'mvn test'
                 }
             }
         }
@@ -76,7 +76,7 @@ pipeline {
             steps {
                 echo 'Building Pengembalian Service...'
                 dir('pengembalian') {
-                    sh 'mvn clean package -DskipTests'
+                    bat 'mvn clean package -DskipTests'
                 }
             }
         }
@@ -85,7 +85,7 @@ pipeline {
             steps {
                 echo 'Testing Pengembalian Service...'
                 dir('pengembalian') {
-                    sh 'mvn test'
+                    bat 'mvn test'
                 }
             }
         }

@@ -51,7 +51,7 @@ public class BukuController {
     }
 
     @PostMapping
-    public BukuModel creteBuku(@RequestBody BukuModel buku) {
+    public BukuModel createBuku(@RequestBody BukuModel buku) {
         log.info("Request received", kv("action", "CREATE"), kv("judul", buku.getJudul()));
         BukuModel result = bukuService.createBuku(buku);
         log.info("Request completed", kv("action", "CREATE"), kv("status", "SUCCESS"), kv("id", result.getId()));
